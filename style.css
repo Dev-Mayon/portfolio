@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&family=Share+Tech&display=swap');
+
+* {
+    margin:  0;/*0*/
+    padding: 0;/*0*/
+    box-sizing: border-box; /* Adicionado aqui para incluir box-sizing */
+
+}
+
+/*:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: aliceblue;
+    --cor-terciaria: #20E5F6; 
+}*/
+
+body {
+    /*height: 100vh;*/
+    box-sizing: border-box;
+    background-color: black;
+    /*background-color: var(--cor-primaria)*/
+    color:aliceblue
+    
+
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link {
+    color: #20E5F6;
+    font-size: 1rem;/*15px*/
+    font-family: "M PLUS 1 Code", monospace;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  
+  
+
+}
+
+
+span {
+    color: #20E5F6;
+    border: 1px solid #20E5F6;
+    padding: 1px;
+
+}
+
+.apresentacao {
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.minha-imagem {
+    width: /*50%;*/100%;/*450px;*/
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px; /* Define bordas suaves */
+}
+
+.apresentacao__conteudo {
+    width: /*50%;*/ 100%;
+    /*height: auto;*/
+    margin-right: 20px;
+    gap: 20px;
+   
+   
+    
+}
+
+.apresentacao_conteudo_titulo {
+    font-size: 2.3rem;/*38px;*/
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+
+.apresentacao_conteudo_subtitulo_missao {
+    font-size: 1.6rem;/*;25px;*/
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+
+.titulo_destaque {
+    color: #20E5F6;
+}
+
+.apresentacao_conteudo_texto {
+    font-size: 0.96rem;/*15px;*/
+    font-family: "M PLUS 1 Code", monospace;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+
+.apresentacao_link_subtitulo{
+    font-size: 1rem;/*16px;*/
+    font-family: "M PLUS 1 Code", monospace;
+    font-weight: 300;
+    font-style: normal;
+    
+    
+}
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+
+}
+.apresentacao_links {
+    /*background-color: #20E5F6; */
+    width: /*50%;*/200px;
+    text-align: center;
+    border: 2px solid #20E5F6;
+    border-radius: 16px;
+    font-size: 1.2rem;/*20px;*/
+    padding: 5px 0; /* Aumentei o padding para dar mais espaço dentro do link */
+    text-decoration: none;
+    color: #20E5F6;
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px; /* Espaçamento abaixo dos links se houver mais de um */
+    align-items: center;
+    gap: 32px;
+
+    
+}
+
+.apresentacao_links:hover{
+    background-color: rgb(30, 201, 201);
+
+}
+
+.rodape{
+    font-size: 1rem;/*16px;*/
+    font-family: "M PLUS 1 Code", monospace;
+    font-weight: 400;
+    font-style: normal;
+    padding: 28px;
+    text-align: center;
+    color:#20E5F6;
+    background-color:rgb(29, 25, 25)
+    
+    
+ 
+}
+
+@media (max-width:1100px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+
+    }
+    .apresentacao__conteudo {
+        width: auto;/*50%;*/ /*420px;*/
+        /*height: auto;*/
+        /*margin-left: 80px;
+        gap: 40px;*/
+
+}
+.cabecalho {
+    padding: 10%;
+
+
+}
+.cabecalho_menu {
+    justify-content: center;
+}
+.cabecalho_menu_link {
+    font-size: 2rem;/*15px*/
+    
+}
+.apresentacao_conteudo_subtitulo_missao {
+    font-size: 2.5rem;/*;25px;*/
+}
+
+.titulo_destaque {
+    color: #20E5F6;
+}
+
+.apresentacao_conteudo_texto {
+    font-size: 1.5rem;/*15px;*/
+    font-family: "M PLUS 1 Code", monospace;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+.minha-imagem {
+    width: /*50%;*/100%;/*450px;*/
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px; /* Define bordas suaves */
+}
+}
+@media (max-width:430px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+
+    }
+    .apresentacao__conteudo {
+        width: auto;/*50%;*/ /*420px;*/
+        /*height: auto;*/
+        /*margin-left: 80px;
+        gap: 40px;*/
+
+}
+.cabecalho {
+    padding: 5% 5%;
+
+
+}
+.cabecalho_menu {
+    flex-direction: column; /* Alterei a direção dos itens para coluna */
+        align-items: center; /* Centralizei os itens */
+        gap: 5px; /* Espaçamento entre os itens */
+}
+.minha-imagem {
+    width: /*50%;*/100%;/*450px;*/
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px; /* Define bordas suaves */
+}
+}
+@media (max-width:635px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+
+    }
+    .apresentacao__conteudo {
+        width: auto;/*50%;*/ /*420px;*/
+        /*height: auto;*/
+        /*margin-left: 80px;
+        gap: 40px;*/
+
+}
+.cabecalho {
+    padding: 5% 5%;
+
+
+}
+.cabecalho_menu_link {
+    font-size: 1rem;/*15px*/
+}
+.cabecalho_menu {
+    flex-direction: column; /* Alterei a direção dos itens para coluna */
+        align-items: center; /* Centralizei os itens */
+        gap: 5px; /* Espaçamento entre os itens */
+}
+.minha-imagem {
+    width: /*50%;*/100%;/*450px;*/
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px; /* Define bordas suaves */
+}
+}
